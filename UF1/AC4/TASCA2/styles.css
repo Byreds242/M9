@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #111;
+  color: #0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.grid-container {
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  grid-template-rows: repeat(3, auto); /* 3 filas */
+  gap: 10px; /* Espacio entre las celdas */
+  padding: 0;
+  justify-content: center;
+}
+
+.grid-item {
+  border: 5px solid #0f0;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px; /* Espacio de 5px entre el borde verde y la imagen */
+  box-sizing: border-box; /* Para asegurarse de que el padding no afecte el tamaño */
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al contenedor sin deformarse */
+  object-position: center; /* Asegura que la imagen se centre */
+}
+
+/* Ajustar la altura de las imágenes en la primera fila */
+.grid-container > .grid-item:nth-child(-n+4) {
+  height: 150px; /* La primera fila tendrá una altura de 150px */
+}
+
+/* Ajustar la altura de las imágenes en las filas siguientes */
+.grid-container > .grid-item:nth-child(n+5) {
+  height: 300px; /* Las demás filas tendrán una altura de 300px */
+}
+
+/* Ocultar las imágenes 1 y 4 */
+.grid-item.hidden {
+  visibility: hidden; /* Las imágenes no serán visibles pero ocuparán espacio */
+}

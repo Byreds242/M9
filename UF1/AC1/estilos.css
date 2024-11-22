@@ -1,0 +1,50 @@
+/* Reseteo de márgenes y fuente básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0; /* Color de fondo del header */
+    border-bottom: 1px solid #ccc; /* Línea inferior del header */
+}
+
+/* Estilo para la sección del logo */
+.logo img {
+    height: 50px; /* Tamaño ajustable del logo */
+}
+
+/* Estilo para las opciones a la derecha */
+.opciones {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre elementos */
+}
+
+/* Estilo para los enlaces de Contactos y CA */
+.opciones a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilo para la barra de separación */
+.opciones span {
+    color: #999; /* Color de las barras | */
+    font-size: 16px;
+}
+
+/* Estilo para la imagen de usuario */
+.icono-usuario {
+    width: 40px; /* Ajusta el tamaño según tus preferencias */
+    height: 40px;
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+}
