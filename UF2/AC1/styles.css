@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Espaciado entre contenedores */
+}
+
+.house {
+    width: 300px; /* Ancho del contenedor */
+    height: 300px; /* Altura del contenedor para que sea cuadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #000; /* Borde negro */
+}
